@@ -1,0 +1,14 @@
+.gridCategories {
+    width: 50em;
+    gap: 0.5em;
+    display: flex; 
+    flex-wrap: wrap;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .gridCategories { 
+        width: 90%;
+    }
+
+}

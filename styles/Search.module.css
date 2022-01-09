@@ -1,0 +1,36 @@
+.search {
+    width: 50em;
+    height: 3em;
+    display: flex;
+    gap: 1em; 
+}
+
+.searcher {
+    width: 95%;
+    height: 100%;
+    outline: none;
+    border: none; 
+    border-bottom: 0.1em solid black;
+    font-size: 1.5em;
+}
+
+.imageSearcher {
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 768px) {
+    .search { 
+        width: 80%;
+    }
+
+    .searcher {
+        width: 95%;
+        height: 100%;
+        outline: none;
+        border: none; 
+        border-bottom: 0.1em solid black;
+        font-size: 1.5em;
+        font-size: 1.3em;
+    }
+
+}

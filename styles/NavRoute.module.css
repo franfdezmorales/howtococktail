@@ -1,0 +1,11 @@
+.navRoute {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.15em;
+}
+
+.navRoute span {
+    font-size: 1.1em;
+    font-weight: 600;
+}

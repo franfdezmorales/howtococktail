@@ -1,0 +1,81 @@
+.modal {
+    position: fixed;
+    left: 0; 
+    top: 0; 
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.modalContent {
+    width: 30em;
+    padding: 2em; 
+    background-color: white;
+    border-radius: 0.3em;
+    box-shadow: 0 0.3em 0.5em 0 rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 0.75em; 
+}
+
+.modalContent hr {
+    width: 100%;
+    border: none;
+    border-top: .3em double rgb(0, 0, 0);
+    color: rgb(0, 0, 0);
+    overflow: visible;
+    text-align: center;
+    height: 0.2em;
+}
+
+.modalContent hr:after {
+    background-color: white;
+    content: '♣';
+    padding: 0 0.3em;
+    position: relative;
+    top: -0.9em;
+}
+
+.title {
+    font-size: 2.5em !important; 
+}
+
+.cocktailImage {
+    border-radius: 0.3em;
+}
+
+.description {
+    width: 100%;
+    font-size: 0.9em !important;
+}
+
+.ingredients {
+    width: 100%;
+    display: flex; 
+    flex-wrap: wrap;
+    gap: 0.25em; 
+}
+
+
+
+@media only screen and (max-width: 768px) {
+    .modalContent { 
+        width: 90%;
+    }
+
+    .title {
+        font-size: 2em !important; 
+    }
+
+    .description {
+        width: 100%;
+        font-size: 0.75em !important;
+    }
+
+}

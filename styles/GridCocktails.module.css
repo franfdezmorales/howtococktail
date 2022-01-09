@@ -1,0 +1,15 @@
+.gridCocktails {
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fill, 15em);
+    gap: 1em; 
+}
+
+
+@media only screen and (max-width: 768px) {
+    .gridCocktails { 
+        grid-template-columns: repeat(auto-fill, 10em);
+    }
+
+}

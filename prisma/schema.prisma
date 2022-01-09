@@ -1,0 +1,21 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model cocktails {
+  id          Int    @id @default(autoincrement())
+  user_id     String
+  cocktail_id Int
+  users       users  @relation(fields: [user_id], references: [user_id], onDelete: Cascade, map: "fk_users_cocktails")
+}
+
+model users {
+  id        Int         @id(map: " users_pkey") @default(autoincrement())
+  user_id   String      @unique(map: "user_unique")
+  cocktails cocktails[]
+}
