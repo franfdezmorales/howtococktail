@@ -13,7 +13,7 @@ export function CocktailProvider({children}) {
             let _cocktails = []
             await fetch(`api/cocktails/${user?.sub}`)
             .then(r => r.ok && r.json())
-            .then((r) => r.forEach(cocktail => _cocktails = [..._cocktails, cocktail.cocktail_id]))
+            .then(r => r.forEach(cocktail => _cocktails = [..._cocktails, cocktail.cocktail_id]))
             .then(r => setMyCocktails(_cocktails))
         }
         fetchMyCocktails()
